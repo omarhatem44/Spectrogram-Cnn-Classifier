@@ -111,7 +111,9 @@ Predictions saved to: model/test_predictions.csv
 ## 📬 Contact
 
 **Author**: Omar Hatem Mohamed 
+
 **Linkedin**: www.linkedin.com/in/omar-ellaban-355ba4369
+
 **Email**: omarhatemmoahemd@gmail.com
 
 ---
