@@ -118,7 +118,7 @@ if __name__ == '__main__':
         torch.save(model.state_dict(), model_path)
         print(f"✅ Model saved to: {model_path}")
 
-    # ✅ تقييم الأداء على مجموعة الاختبار
+    # ✅ evaluation 
     model.eval()
     correct = 0
     total = 0
@@ -140,7 +140,7 @@ if __name__ == '__main__':
     test_acc = correct / total
     print(f"📊 Test Accuracy: {test_acc:.4f}")
 
-    # ✅ حفظ التوقعات في ملف CSV مع الحفاظ على ترتيب أسماء الملفات
+    # ✅ save the prediction result in csv file 
     output_csv_path = 'D:/Untliteled 17/Main Model/test_predictions.csv'
     with open(output_csv_path, mode='w', newline='') as file:
         writer = csv.writer(file)
