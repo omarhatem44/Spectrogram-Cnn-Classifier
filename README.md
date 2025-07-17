@@ -39,7 +39,7 @@ spectrogram-cnn-classifier/
 ├── Cnn_Model.py               # Main training and evaluation script
 ├── README.md                  # Project documentation
 ├── requirements.txt           # Python dependencies
-└── .gitignore                 # Ignored files
+               # Ignored files
 ```
 
 ---
