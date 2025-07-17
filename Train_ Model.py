@@ -74,8 +74,11 @@ def train_model(model, dataloaders, criterion, optimizer, device, num_epochs=10)
 
 # -------- Run Pipeline --------
 if __name__ == '__main__':
-    csv_file = 'D:/Untliteled 17/spectograms/physionet_labels_multi_segment.csv'
-    root_dir = 'D:/Untliteled 17/spectograms'
+    # 🔁 Change these to your own local paths if needed
+    csv_file = 'data/physionet_labels_multi_segment.csv'       # Path to CSV with labels
+    root_dir = 'data/spectrogram_images'                       # Directory containing spectrogram .png files
+    model_path = 'models/spectrogram_model.pth'                # Path to save/load model weights
+    output_csv_path = 'outputs/test_predictions.csv'           # Path to save predictions
 
     transform = transforms.Compose([
         transforms.Resize((128, 128)),
@@ -98,8 +101,6 @@ if __name__ == '__main__':
     }
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-    model_path = 'D:/Untliteled 17/Main Model/spectrogram_model.pth'
     model = get_model()
 
     if os.path.exists(model_path):
@@ -141,7 +142,7 @@ if __name__ == '__main__':
     print(f"📊 Test Accuracy: {test_acc:.4f}")
 
     # ✅ save the prediction result in csv file 
-    output_csv_path = 'D:/Untliteled 17/Main Model/test_predictions.csv'
+    os.makedirs(os.path.dirname(output_csv_path), exist_ok=True)
     with open(output_csv_path, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['segment_filename', 'True Label', 'Predicted Label'])
