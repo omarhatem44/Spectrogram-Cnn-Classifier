@@ -15,12 +15,12 @@ The model effectively learns frequency-time representations to distinguish betwe
 
 ## 🔍 Key Features
 
-- ✅ Preprocessing of physiological audio into spectrogram images  
-- 🧠 Transfer learning using **ResNet-18**  
-- ⚖️ Weighted loss function to handle class imbalance  
-- 📊 Accuracy: **95.04%** on the test set  
-- 📁 Outputs predictions in CSV format for easy post-processing  
-- 🧪 Includes training, validation, and testing pipeline  
+-  Preprocessing of physiological audio into spectrogram images  
+-  Transfer learning using **ResNet-18**  
+-  Weighted loss function to handle class imbalance  
+-  📢 Accuracy: **95.04%** on the test set  
+-  Outputs predictions in CSV format for easy post-processing  
+-  Includes training, validation, and testing pipeline  
 
 ---
 
@@ -82,10 +82,8 @@ python Cnn_Model.py
 ## 🧪 Output
 
 - ✅ **Training and testing accuracy** printed to the terminal  
-- ✅ **Predictions CSV** saved to:  
-  `model/test_predictions.csv`  
-- ✅ **Trained model weights** saved to:  
-  `model/spectrogram_model.pth`
+- ✅ **Predictions CSV** saved to:  `model/test_predictions.csv`  
+- ✅ **Trained model weights** saved to:  `model/spectrogram_model.pth`
 
 ---
 
