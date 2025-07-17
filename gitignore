@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-*.pth
-*.ipynb_checkpoints
-model/
-data/
-*.h5
-*.pt
-*.pth
