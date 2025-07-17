@@ -36,7 +36,7 @@ spectrogram-cnn-classifier/
 │   ├── spectrogram_model.pth
 │   └── test_predictions.csv
 │
-├── Cnn_Model.py               # Main training and evaluation script
+├── Train_Model.py               # Main training and evaluation script
 ├── README.md                  # Project documentation
 ├── requirements.txt           # Python dependencies
                
